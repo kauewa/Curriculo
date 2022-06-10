@@ -26,6 +26,17 @@ header button:hover{
     transform: scale(1.05);
 }
 
+.ligado{
+    font-size: 1rem;
+    color: #1afe49;
+    width: 49%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: #041348;
+    border: #041348;
+    box-shadow: 10px 10px 10px #041348, -10px -10px 10px #041348;
+}
+
 body{
     background-color: #3d43b4;
 }
