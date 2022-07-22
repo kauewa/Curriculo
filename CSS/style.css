@@ -3,9 +3,8 @@
 }
 
 header{
-    width: 105%;
+    width: 100%;
     align-items: center;
-    
 }
 
 header button{
@@ -13,7 +12,7 @@ header button{
     color: white;
     width: 49%;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.6rem;
     background-color: #041348;
     border: #041348;
     box-shadow: 10px 10px 10px #041348, -10px -10px 10px #041348;
@@ -31,7 +30,7 @@ header button:hover{
     color: #1afe49;
     width: 49%;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 0.6rem;
     background-color: #041348;
     border: #041348;
     box-shadow: 10px 10px 10px #041348, -10px -10px 10px #041348;
@@ -39,13 +38,14 @@ header button:hover{
 
 body{
     background-color: #3d43b4;
+    height: 100%;
 }
 
 main{
     display:flex;
     flex-direction: column;
-    width: 940px;
-    margin: 100px auto;
+    width: 78%;
+    margin: 100px auto auto auto;
     background-color: #041348;
     padding: 2rem;
     border-radius: 1rem;
@@ -53,25 +53,6 @@ main{
     border-color: #041348;
     box-shadow: 10px 10px 70px #041348, -10px -10px 70px #041348;
     transition: 400ms;
-}
-
-main:hover{
-    transform: scale(1.02);
-    box-shadow: 20px 20px 100px #041348, -20px -20px 100px #041348; 
-}
-
-.perfil{
-    width: 110px;
-    height: 120px;
-    border-radius: 100%;
-    border-style: solid;
-    box-shadow: 2px 2px 10px #083e12, -2px -2px 10px #083e12; 
-    transition: 600ms;
-}
-
-.perfil:hover{
-    transform: scale(1.2);
-    box-shadow: 2px 2px 10px #1afe49, -2px -2px 10px #1afe49; 
 }
 
 .cabeçalho{
@@ -82,8 +63,8 @@ main:hover{
     justify-content: space-between;
 }
 
-.cabeçalho h2{
-    font-size: 40px;
+.cabeçalho .box-information h2{
+    font-size: 25px;
     color: #1afe49;
 }
 
@@ -97,7 +78,7 @@ main:hover{
 }
 
 .box h3{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #1afe49;
     margin-bottom: 0.5rem;
 }
@@ -111,16 +92,20 @@ main:hover{
     line-height: 1.2rem;
 }
 
+.cabeçalho{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .dados-pessoais a{
     color: #8386f5;
 }
 
-.dados-pessoais a:hover{
-    color: #1afe49;
-}
-
 .redes{
-    width: 20%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
@@ -139,24 +124,10 @@ main:hover{
     transition: 200ms;
 }
 
-.dados-pessoais .linkedin:hover{
-    border-color: #0e76a8;
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: 2px 2px 10px #0e76a8, -2px -2px 10px #0e76a8;
-}
-
 .dados-pessoais .github{
     background-color: black;
     border-color: black;
     transition: 200ms;
-}
-
-.dados-pessoais .github:hover{
-    border-color: black;
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: 2px 2px 10px black, -2px -2px 10px black;
 }
 
 .box-curso{
@@ -164,7 +135,7 @@ main:hover{
 }
 
 .grade{
-    width: 20%;
+    width: 50%;
     height: 40px;
     margin-top: 1rem;
     padding: 0.5rem 1.5rem;
@@ -176,15 +147,8 @@ main:hover{
     transition: 200ms;
 }
 
-.grade:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    background-color: #29eb50f9;
-    box-shadow: 2px 2px 10px #1afe49, -2px -2px 10px #1afe49;
-}
-
 .certificado{
-    width: 15%;
+    width: 40%;
     height: 40px;
     margin-top: 1rem;
     padding: 0.5rem 1.5rem;
@@ -196,24 +160,79 @@ main:hover{
     transition: 200ms;
 }
 
-.certificado:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    background-color: #860029;
-    box-shadow: 2px 2px 10px #860029, -2px -2px 10px #860029;
-}
-
 .cursando{
     color: yellow;
-}
-
-.interrompido{
-    color: #860029;
 }
 
 .concluido{
     color: #1afe49;
 }
+
+.perfil{
+    width: 110px;
+    height: 120px;
+    border-radius: 100%;
+    border-style: solid;
+    box-shadow: 2px 2px 10px #083e12, -2px -2px 10px #083e12; 
+    transition: 600ms;
+}
+
+@media screen and (min-width: 1440px) {
+    main{
+        width: 50%;
+    }
+
+    .perfil:hover{
+        transform: scale(1.2);
+        box-shadow: 2px 2px 10px #1afe49, -2px -2px 10px #1afe49; 
+    }
+
+    .redes{
+        width: 15%;
+    }
+
+    .grade{
+        width: 20%;
+    }
+
+    .certificado{
+        width: 12%;
+    }
+
+    .dados-pessoais a:hover{
+        color: #1afe49;
+    }
+
+    .dados-pessoais .linkedin:hover{
+        border-color: #0e76a8;
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 2px 2px 10px #0e76a8, -2px -2px 10px #0e76a8;
+    }
+
+    .dados-pessoais .github:hover{
+        border-color: black;
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 2px 2px 10px black, -2px -2px 10px black;
+    }
+
+    .grade:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        background-color: #29eb50f9;
+        box-shadow: 2px 2px 10px #1afe49, -2px -2px 10px #1afe49;
+    }
+
+    .certificado:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        background-color: #860029;
+        box-shadow: 2px 2px 10px #860029, -2px -2px 10px #860029;
+    }
+    
+}
+
 
 
 
